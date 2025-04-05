@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        table,th,td{
+            border:0.5px solid black;
+        }
+        table{
+            width:60%;
+            margin: 20px;
+            font-family: Arial;
+            font-size: 18px;
+            border-collapse: collapse;
+        }
+        th{
+            background-color: rgb(96, 238, 238);
+            color:rgb(27, 26, 26);
+            padding: 10px;
+         text-align; center;
+        }
+        td{
+            background-color:red;
+             padding:10px;
+             text-align; center;
+            }
+            tr:hover{
+background-color: rgb(103, 221, 113);
+            }
+            div.fixed{
+            position: fixed;
+            border: 3px solid black;
+            color:rgb(4, 46, 32);
+            top:0%;
+            left:0%
+
+            }
+            div.fixed1{
+            position: fixed;
+            border: 3px solid black;
+            color:rgb(4, 46, 32);
+            right:0%;
+            width: 200px;
+            height: 100%;
+            color: white;
+            padding: 20px;
+            }
+
+            div.fixed2{
+            position: fixed;
+            border: 3px solid black;
+            color:rgb(4, 46, 32);
+            bottom:0%;
+            right:0%;
+            }
+            div.relative{
+                position: relative;
+                width: 400px;
+                height: 200px;
+                border: 3px solid black;
+            }
+            div.absolute{
+                position:absolute;
+                width: 200px;
+                height: 100px;
+                border: 3px solid black;
+                top: 300px;
+                left:0%;
+
+            }
+            modal{
+                right: 50;
+                width: 200px;
+                height: 100px;
+                position: fixed;
+                background-color: rgb(203, 203, 224);
+            }
+            
+            
+    </style>
+    
+    <title>Table</title>
+</head>
+<body>
+    <h1>Employees</h1>
+    <table id="table1">
+        <div style="Overflow">
+            <tr>
+               <th>Name</th>
+               <th>Age</th>
+               <th>occupation</th>
+            </tr>
+            <tr>  
+               <td>Doe</td>
+               <td>23</td>
+               <td>Designer</td>
+            </tr>
+            <tr>
+               <td>Fang</td>
+               <td>45</td>
+               <td>Engineer</td>
+            </tr>
+            <tr>
+               <td>Jiang</td>
+               <td>24</td>
+               <td>Doctor</td>
+
+           </tr>
+        </div>
+    </table>
+    <div class="fixed">
+        this is fixed as header
+    </div>
+    <div class="fixed1">
+        this is fixed as slider
+    </div>
+    <div class="fixed2">
+        this is fixed as bottom
+    </div>
+    <div class="relative">
+        this is normal relative
+    </div>
+    <div class="absolute">
+        this is anchestor relative
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <P>This is centered modal popup</P>
+            <button onclick="closemodal()">close</button>
+            </button>
+        </div>
+
+    </div>
+  </body>
+</html>
