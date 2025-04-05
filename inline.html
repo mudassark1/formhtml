@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    span.a{
+        display: inline;
+        width: 100px;
+        padding: 5px;
+        background-color: burlywood;
+    }
+    span.b{
+        display: inline-block;
+        width: 100px;
+        padding: 5px;
+        background-color: burlywood;
+    }
+    span.c{
+        display: block;
+        width: 100px;
+        padding: 5px;
+        background-color: burlywood;
+        
+    }
+    .horizontal-menu  {
+        display: flex;
+        background-color: #333;
+        padding: 10px;
+
+    }
+    .horizontal-menu a{
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+
+    }
+    .horizontal-menu  a:hover {
+        background-color:#575757  ;
+    }
+    /* vertical navigation */
+    .vertical-menu {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        background-color: #444;
+    }
+    .vertical-menu a{
+        color:white;
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+    }
+    .vertical-menu a:hover {
+        background-color: #575757;
+    }
+    /* Dropdown-menu */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display:none;
+        position: absolute;
+        background-color: white;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px rgb(0,0,0,0.2);
+    }
+    .dropdown-content a{
+        color: black;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+    }
+    .
+
+
+
+    
+   .dropdown:hover .dropdown-content{
+    display: block;
+
+   }
+   .overflow-container{
+    width: 200px;
+    height: 100px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+   }
+</style>
+    <title>End of CSS</title>
+</head>
+<body>
+<h1>Inline properties</h1>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.,<span class="a"> Perspiciatis</span> reiciendis assumenda nemo odit maxime! Quod, suscipit molestias ratione totam nesciunt vitae aliquid error dolores quibusdam! Totam natus accusantium corporis ipsum.</p>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.,<span class="b"> Perspiciatis</span> reiciendis assumenda nemo odit maxime! Quod, suscipit molestias ratione totam nesciunt vitae aliquid error dolores quibusdam! Totam natus accusantium corporis ipsum.</p>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.,<span class="c"> Perspiciatis</span> reiciendis assumenda nemo odit maxime! Quod, suscipit molestias ratione totam nesciunt vitae aliquid error dolores quibusdam! Totam natus accusantium corporis ipsum.</p>
+
+    <h2>Horizontal-Menu</h2>
+    <div class="horizontal-menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <a href="#">ontact</a>
+    <h2>Vertical Menu</h2>
+    <div class="vertical-menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <h2>Dropdown-Menu</h2>
+    <div class="dropdown">
+        <button>Menu</button>
+        <div class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        </div>
+</div>
+<h2>overflow Example</h2>
+<div class="overflow-container">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam rerum explicabo iste impedit! Obcaecati tempore ut maiores nam illo minus qui officia. Quae maiores laborum suscipit labore quasi, nisi perferendis?
+
+</div>
+</body>
+</html>
